@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOT-RESTAURANT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section id="nav-bar">
+        <div class="nav-container">
+            <div class="logo">HOT<span id="logo">Food |</span></div>
+            <ul class="menu">
+                <li> <a href="">Home</a></li>
+                <li> <a href="">Menu</a></li>
+                <li> <a href="">Order</a></li>
+                <li> <a href="">Contact</a></li>
+            </ul>
+            <div class="shop">
+                <p id="number">0</p>
+                <i class='bx bx-shopping-bag' id="shopbag"></i>
+            </div>
+        </div>
+    </section>
+    <section id="home">
+        <div class="home-container">
+            <div class="home-text">
+                <h3 class="logo">welcome to Hot<span id="logo">Food |</span></h3>
+                <h3 class="home-text-title">Your favorite africain and continental dish joint</h3>
+                <h3 class="home-text-title">Open from 8AM to 2AM Everyday</h3>
+                <h3 class="home-text-title">Here we ddo more than cooking</h3>
+            </div>
+            <div class="post-wrapper">
+                <div class="post">
+                    <img src="image/pizza1.png" alt="" class="slider-image">
+                </div>
+                <div class="post">
+                    <img src="image/chicken2.jpg" alt="" class="slider-image">
+                </div>
+                <div class="post">
+                    <img src="image/salade1.jpg" alt="" class="slider-image">
+                </div>
+            </div>
+        </div>
+
+      
+    </section>
+     <!-------------------------todayfood-------------------------->
+    <section id="todayfood">
+        <div class="foodtitle"><button id="todaybtn"></button><i class="bx bx-bowl-hot"></i>TODAY<span id="foodtitle">special dish</span><button id="todaybtn2"></button> </div>
+        <div class="displayupdate">
+            <marquee bgcolor="#fff" loop="-1" scrollamount="5" width="100%">Today special dish will be available only in restaurent, no order will be taking, Thank you.</marquee>
+        </div>
+        <div class="direction">
+            <i class='bx bx-left-arrow-alt prev'></i>
+            
+            <div class="post-wrapper2">
+               
+                <div class="post">
+                <img src="image/chicken.png" alt="">
+                
+                <div class="details">
+                    <div class="details-sub">
+                       <span class="productitle">Chicken&Macronni</span>
+                        <div>
+                        <i class='bx bx-star color'></i>
+                        <i class='bx bx-star color'></i>
+                        <i class='bx bx-star color'></i>
+                        <i class='bx bx-star'></i>
+                        </div>
+                    </div>
+                    <div class="details-sub1">
+                    <span class="price">$ 20</span>
+                    <div class="heartlikes">
+                       <i class='bx bx-heart likes' onclick="addLikes(this)"></i>
+                       <div class="likesnumber">20</div>
+                      </div>
+                   </div>
+                </div>
+                </div>
+                <div class="post">
+                   <img src="image/jollof.png" alt="">
+                   
+                   <div class="details">
+                       <div class="details-sub">
+                          <span class="productitle">Jollof/Rice&Chicken </span>
+                           <div>
+                           <i class='bx bx-star color'></i>
+                           <i class='bx bx-star color'></i>
+                           <i class='bx bx-star '></i>
+                           <i class='bx bx-star'></i>
+                           </div>
+                       </div>
+                       <div class="details-sub1">
+                       <span class="price">$ 10</span>
+                       <div class="heartlikes">
+                          <i class='bx bx-heart likes' onclick="addLikes(this)"></i>
+                          <div class="likesnumber">4</div>
+                         </div>
+                      </div>
+                   </div>
+                   </div>
+                   <div class="post">
+                       <img src="image/fufu.jpg" alt="">
+                       
+                       <div class="details">
+                           <div class="details-sub">
+                              <span class="productitle">Fufu/light soup</span>
+                               <div>
+                               <i class='bx bx-star color'></i>
+                               <i class='bx bx-star color'></i>
+                               <i class='bx bx-star color'></i>
+                               <i class='bx bx-star'></i>
+                               </div>
+                           </div>
+                           <div class="details-sub1">
+                           <span class="price">$ 25</span>
+                           <div class="heartlikes">
+                              <i class='bx bx-heart likes' onclick="addLikes(this)"></i>
+                              <div class="likesnumber">7</div>
+                             </div>
+                          </div>
+                       </div>
+                       </div>
+                       <div class="post">
+                           <img src="image/banku and tilapia.png" alt="">
+                           
+                           <div class="details">
+                               <div class="details-sub">
+                                  <span class="productitle">Banku&Tilapia</span>
+                                   <div>
+                                   <i class='bx bx-star color'></i>
+                                   <i class='bx bx-star color'></i>
+                                   <i class='bx bx-star'></i>
+                                   <i class='bx bx-star'></i>
+                                   </div>
+                               </div>
+                               <div class="details-sub1">
+                               <span class="price">$ 21</span>
+                               <div class="heartlikes">
+                                  <i class='bx bx-heart likes'onclick="addLikes(this)"></i>
+                                  <div class="likesnumber">30</div>
+                                 </div>
+                              </div>
+                           </div>
+                           </div>
+                           <div class="post">
+                               <img src="image/macroni.jpeg" alt="">
+                               
+                               <div class="details">
+                                   <div class="details-sub">
+                                      <span class="productitle">Macronni&Sausige</span>
+                                       <div>
+                                       <i class='bx bx-star color'></i>
+                                       <i class='bx bx-star color'></i>
+                                       <i class='bx bx-star color'></i>
+                                       <i class='bx bx-star'></i>
+                                       </div>
+                                   </div>
+                                   <div class="details-sub1">
+                                   <span class="price">$ 20</span>
+                                   <div class="heartlikes">
+                                      <i class='bx bx-heart likes'onclick="addLikes(this)"></i>
+                                      <div class="likesnumber ">3</div>
+                                     </div>
+                                  </div>
+                               </div>
+                               </div>
+                               <div class="post">
+                                   <img src="image/salade3.jpg" alt="">
+                                   
+                                   <div class="details">
+                                       <div class="details-sub">
+                                          <span class="productitle">Salade&Beef</span>
+                                           <div>
+                                           <i class='bx bx-star color'></i>
+                                           <i class='bx bx-star color'></i>
+                                           <i class='bx bx-star color'></i>
+                                           <i class='bx bx-star'></i>
+                                           </div>
+                                       </div>
+                                       <div class="details-sub1">
+                                       <span class="price">$ 20</span>
+                                       <div class="heartlikes">
+                                          <i class='bx bx-heart likes'onclick="addLikes(this)"></i>
+                                          <div class="likesnumber">10</div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   </div>
+               </div>
+            <i class='bx bx-right-arrow-alt next'></i>
+           </div>
+    
+       
+           <div class="foodtitle"><button id="todaybtn"></button><span id="menutitle"><i class="bx bx-down-arrow-alt"></i>Click Here for The Menu</span><button id="todaybtn2"></button> </div>
+    </section>
+     <section id="menuList">
+        <div class="display-menu">
+            <div class="rice-menu">
+                <div class="rice-title">Menu/RICE</div>
+                <p id="rice-menu">*Jollof Rice With Chicken $15</p>
+                <p id="rice-menu">*Fried Rice With Chicken $20</p>
+                <p id="rice-menu">*Riz Contonnet (french) $30</p>
+                <p id="rice-menu">*Jollof Rice With Chicken $20</p>
+
+            </div>
+            <div class="rice-menu">
+                <div class="rice-title">Menu/MACRONNI</div>
+                <p id="rice-menu">*Jollof Rice With Chicken $15</p>
+                <p id="rice-menu">*Fried Rice With Chicken $20</p>
+                <p id="rice-menu">*Riz Contonnet (french) $30</p>
+                <p id="rice-menu">*Jollof Rice With Chicken $20</p>
+
+            </div>
+            <div class="rice-menu">
+                <div class="rice-title">Menu/SALADE</div>
+                <p id="rice-menu">*Jollof Rice With Chicken $15</p>
+                <p id="rice-menu">*Fried Rice With Chicken $20</p>
+                <p id="rice-menu">*Riz Contonnet (french) $30</p>
+                <p id="rice-menu">*Jollof Rice With Chicken $20</p>
+
+            </div>
+            <div class="rice-menu">
+                <div class="rice-title">Menu/FUFU</div>
+                <p id="rice-menu">*Jollof Rice With Chicken $15</p>
+                <p id="rice-menu">*Fried Rice With Chicken $20</p>
+                <p id="rice-menu">*Riz Contonnet (french) $30</p>
+                <p id="rice-menu">*Jollof Rice With Chicken $20</p>
+
+            </div>
+            <div class="rice-menu">
+                <div class="rice-title">Menu/BANKU</div>
+                <p id="rice-menu">*Jollof Rice With Chicken $15</p>
+                <p id="rice-menu">*Fried Rice With Chicken $20</p>
+                <p id="rice-menu">*Riz Contonnet (french) $30</p>
+                <p id="rice-menu">*Jollof Rice With Chicken $20</p>
+
+            </div>
+            <div class="rice-menu">
+                <div class="rice-title">DRINK/COCKTAIL</div>
+                <p id="rice-menu">*Jollof Rice With Chicken $15</p>
+                <p id="rice-menu">*Fried Rice With Chicken $20</p>
+                <p id="rice-menu">*Riz Contonnet (french) $30</p>
+                <p id="rice-menu">*Jollof Rice With Chicken $20</p>
+
+            </div>
+        </div>
+     </section>
+     <section id="order">
+        <div class="foodtitle"><button id="todaybtn"></button><span id="ordertitle">Place your order</span><button id="todaybtn2"></button> </div>
+
+        <div class="order-place">
+            <div class="post">
+                <img class="img-cart" src="image/chicken.png" alt="">
+                
+                <div class="details">
+                    <div class="details-sub">
+                       <span class="productitle">Chicken/Macronni</span>
+                        <div>
+                        <i class='bx bx-star color'></i>
+                        <i class='bx bx-star color'></i>
+                        <i class='bx bx-star color'></i>
+                        <i class='bx bx-star'></i>
+                        </div>
+                        <button type="button" class="orderpro">order</button>
+                    </div>
+                    <div class="details-sub1">
+                    <span class="price">$ 20</span>
+                    <div class="heartlikes">
+                       <i class='bx bx-heart likes' onclick="addLikes(this)"></i>
+                       <div class="likesnumber">20</div>
+                      </div>
+                   </div>
+                </div>
+                </div>
+                <div class="post">
+                   <img class="img-cart" src="image/jollof.png" alt="">
+                   
+                   <div class="details">
+                       <div class="details-sub">
+                          <span class="productitle">Jollof/Rice/Chicken </span>
+                           <div>
+                           <i class='bx bx-star color'></i>
+                           <i class='bx bx-star color'></i>
+                           <i class='bx bx-star '></i>
+                           <i class='bx bx-star'></i>
+                           </div>
+                           <button type="button" class="orderpro">order</button>
+                       </div>
+                       <div class="details-sub1">
+                       <span class="price">$ 10</span>
+                       <div class="heartlikes">
+                          <i class='bx bx-heart likes' onclick="addLikes(this)"></i>
+                          <div class="likesnumber">4</div>
+                         </div>
+                      </div>
+                   </div>
+                   </div>
+                   <div class="post">
+                       <img class="img-cart" src="image/fufu.jpg" alt="">
+                       
+                       <div class="details">
+                           <div class="details-sub">
+                              <span class="productitle">Fufu/light soup</span>
+                               <div>
+                               <i class='bx bx-star color'></i>
+                               <i class='bx bx-star color'></i>
+                               <i class='bx bx-star color'></i>
+                               <i class='bx bx-star'></i>
+                               </div>
+                               <button type="button" class="orderpro">order</button>
+                           </div>
+                           <div class="details-sub1">
+                           <span class="price">$ 25</span>
+                           <div class="heartlikes">
+                              <i class='bx bx-heart likes' onclick="addLikes(this)"></i>
+                              <div class="likesnumber">7</div>
+                             </div>
+                          </div>
+                       </div>
+                       </div>
+                       <div class="post">
+                           <img class="img-cart" src="image/banku and tilapia.png" alt="">
+                           
+                           <div class="details">
+                               <div class="details-sub">
+                                  <span class="productitle">Banku/Tilapia</span>
+                                   <div>
+                                   <i class='bx bx-star color'></i>
+                                   <i class='bx bx-star color'></i>
+                                   <i class='bx bx-star'></i>
+                                   <i class='bx bx-star'></i>
+                                   </div>
+                                   <button type="button" class="orderpro">order</button>
+                               </div>
+                               <div class="details-sub1">
+                               <span class="price">$ 21</span>
+                               <div class="heartlikes">
+                                  <i class='bx bx-heart likes'onclick="addLikes(this)"></i>
+                                  <div class="likesnumber">30</div>
+                                 </div>
+                              </div>
+                           </div>
+                           </div>
+                           <div class="post">
+                               <img class="img-cart" src="image/macroni.jpeg" alt="">
+                               
+                               <div class="details">
+                                   <div class="details-sub">
+                                      <span class="productitle">Macronni/Sausige</span>
+                                       <div>
+                                       <i class='bx bx-star color'></i>
+                                       <i class='bx bx-star color'></i>
+                                       <i class='bx bx-star color'></i>
+                                       <i class='bx bx-star'></i>
+                                       </div>
+                                       <button type="button" class="orderpro">order</button>
+                                   </div>
+                                   <div class="details-sub1">
+                                   <span class="price">$ 20</span>
+                                   <div class="heartlikes">
+                                      <i class='bx bx-heart likes'onclick="addLikes(this)"></i>
+                                      <div class="likesnumber ">3</div>
+                                     </div>
+                                  </div>
+                               </div>
+                               </div>
+                               <div class="post">
+                                   <img class="img-cart" src="image/salade3.jpg" alt="">
+                                   
+                                   <div class="details">
+                                       <div class="details-sub">
+                                          <span class="productitle">Salade/Beef</span>
+                                           <div>
+                                           <i class='bx bx-star color'></i>
+                                           <i class='bx bx-star color'></i>
+                                           <i class='bx bx-star color'></i>
+                                           <i class='bx bx-star'></i>
+                                           </div>
+                                           <button type="button" class="orderpro">order</button>
+                                       </div>
+                                       <div class="details-sub1">
+                                       <span class="price">$ 20</span>
+                                       <div class="heartlikes">
+                                          <i class='bx bx-heart likes'onclick="addLikes(this)"></i>
+                                          <div class="likesnumber">10</div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   </div>
+        </div>
+     </section>
+<section class="cartBox">
+    <div class="cartPopup container content-section">
+        <i class="bx bx-x close"></i>
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$20</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">Order</button>
+    </div>
+</section>
+<section id="footer">
+    <div class="footer-container">
+        <div class="social-media">
+            <div>
+                <h1 class="social-media-items">Services</h1>
+            </div>
+            <div class="social">
+                <a class="select" href="">Event</a>
+            </div>
+            <div class="social">
+                <a class="select" href="">Catering</a>
+            </div>
+            <div class="social">
+                <a class="select" href="">Event Staff</a>
+            </div>
+            
+        </div>
+
+
+
+        <div class="social-media">
+            <div>
+                <h1 class="social-media-items">Social Media</h1>
+            </div>
+            <div class="social">
+                <i class="bx bxl-whatsapp"></i>
+                <a  href="">+233 546792635</a>
+            </div>
+            <div class="social">
+                <i class="bx bxl-facebook"></i>
+                <a class="select" href="">facebook.com/hotfood</a>
+            </div>
+            <div class="social">
+                <i class="bx bxl-twitter"></i>
+                <a class="select" href="">twitter.com/@hotfood</a>
+            </div>
+            <div class="social">
+                <i class="bx bxl-instagram"></i>
+                <a class="select" href="">instagram.com/hotfood</a>
+            </div>
+            <div class="social">
+                <i class="bx bx-envelope"></i>
+                <a class="select" href="">wwww.hodfood@yahoo.fr</a>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <div>
+                <h1 class="social-media-items">Location</h1>
+            </div>
+            <div class="social">
+                <i class="bx bx-phone-call"></i>
+                <a  href="">+233 546792635</a>
+            </div>
+            <div class="social">
+                <i class="bx bx-current-location"></i>
+                <a  href="">Osu Badu St,Accra</a>
+            </div>
+            <div class="social">
+                <i class="bx bx-box"></i>
+                <a  href="">Accra F/645/4/ring Road</a>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+</body>
+<script>
+    
+    $('.post-wrapper').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows:false,
+    
+  });
+  $('.post-wrapper2').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    nextArrow:$('.next'),
+    prevArrow:$('.prev'),
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+</script>
+<script src="index.js"></script>
+</html>

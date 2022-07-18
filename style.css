@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Macondo&family=Rubik:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+/*---------------------------------Nav-bar section------------------------------------------------*/
+#nav-bar{
+    background-image:linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url(image/navpict3.jpg) ;
+    height: 7vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+   
+   }
+
+   .logo{
+    font-size: 25px;
+    font-family: 'Macondo';
+    font-weight: 600;
+   }
+   #logo{
+    color: rgba(248,97,97);
+
+   }
+   .nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+   }
+   .menu li a{
+    color: white;
+   }
+   .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'rubik';
+   }
+   .menu li a:hover{
+    border-bottom: 4px solid rgba(248,97,97);
+    border-radius: 5px;
+   }
+.shop{
+    position: relative;
+    cursor: pointer;
+}
+#number{
+    position: absolute;
+    top: -7px;
+    font-size: 20px;
+    left: 15px;
+    background-color: black;
+    text-align: center;
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+}
+#shopbag{
+    font-size: 25px;
+}
+ /*--------------------------------------End of nav bar section--------------------------------------------*/
+ /*---------------------------------------------------Starting of the home screen--------------------------*/
+ .post-wrapper{
+    width: 50%;
+    height: 600px;
+    overflow: hidden;
+    padding-top: 20px;
+ }
+.post-wrapper .post{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0px 3px;
+  text-align: center;
+}
+.post-wrapper .post .slider-image{
+    width: 70%;
+    height: 100%;
+}
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+
+}
+.home-text h3{
+    padding-top: 30px;
+}
+
+.home-text-title{
+    font-family: 'josefin sans';
+}
+/* ------------todayfood-----------*/
+#todayfood{
+    
+    width: 100%;
+}
+.foodtitle{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'rubik';
+    font-weight: 500;
+}
+.displayupdate{
+    margin-left:33rem;
+    margin-right: 33rem;
+    font-family: 'Macondo';
+    color:gray;
+}
+
+#todaybtn,
+#todaybtn2{
+width: 200px;
+}
+#foodtitle{
+    color: green;
+}
+.direction{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.direction .post-wrapper2{
+    width: 80%;
+    margin: 0px auto;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.direction .post-wrapper2 .post{
+    display: inline-block;
+    width: 100%;
+    height:200px ;
+    margin: 0px 10px;
+}
+.next,
+.prev{
+    font-size: 30px;
+    cursor: pointer;
+}
+.post img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+.heartlikes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    color: white;
+    font-family:'rubik';
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.heartlikes .likes{
+    cursor: pointer;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: 'rubik';
+    font-size: 15px;
+    
+
+
+}
+.color{
+    color: gold;
+}
+/* ---------------------MENU LIST----------------------------*/
+#menuList{
+    height: 47vh;
+    display: none ;
+}
+#menutitle{
+color:green;
+cursor: pointer;
+}
+
+#menutitle:hover{
+    font-size: 26px;
+}
+
+.display-menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 2rem;
+    padding: 10px;
+    height: 100%;
+    background-image: url(image/menuback.jpg);
+    margin: 10px 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rice-menu .rice-title{
+    font-size: 25px;
+    color: blanchedalmond;
+    font-family: 'macondo';
+
+}
+#rice-menu{
+    padding: 3px;
+    color: red;
+    font-family: 'rubik';
+    font-size: 17px;
+}
+/*--- order section-------*/
+#order{
+    margin: 10px 160px;
+    text-align: center;
+}
+#ordertitle{
+    color: green;
+}
+
+.order-place{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-gap: 2rem;
+    padding: 10px;
+    background-image: url(image/menuback.jpg);
+    background-repeat: no-repeat;
+}
+
+.orderpro{
+    padding: 2px 10px;
+    font-family: 'rubik';
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 50px;
+    background: transparent;
+}
+.orderpro:hover{
+    color: white;
+    cursor: pointer;
+}
+/*----------------------------------shopping cart----------------------------------------------*/
+.cartBox{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden ;
+    font-family: 'macondo';
+}
+
+.cartBox .cartPopup{
+    position: relative;
+    height: 70%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+.content-section {
+    margin: 1rem;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding:0 1.5rem ;
+}
+
+.bx-x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    background-color: yellowgreen;
+    border-top-right-radius:10px ;
+}
+.bx-x:hover{
+    background-color: green;
+}
+
+.section-header{
+    font-family: 'rubik';
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.cart-row{
+    display: flex;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5rem;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-item{
+    width: 45%;
+}
+
+.cart-price{
+    width: 20%;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.cart-quantity{
+    width: 35%;
+}
+.cart-item-title{
+    color: #333;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+.cart-item-image{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.67rem 0.67rem;
+    cursor: pointer;
+    font-family: 'rubik';
+}
+
+.btn-danger{
+    color: white;
+    background-color: #eb5757;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    font-family: 'macondo';
+}
+.btn-danger:hover{
+    background-color: #cc4c4c;
+}
+
+.cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56ccf2;
+    background-color: #eee;
+    color: #333;
+    padding:0px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: 25px;
+    font-family: 'macondo';
+
+}
+
+.cart-row:last-child{
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column{
+    border: none;
+}
+
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: red;
+    margin-right: 20px;
+}
+
+.cart-total-price{
+    color: #333;
+    font-size: 1.1rem;
+}
+.btn-purchase{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75rem;
+}
+.btn-primary{
+    color: white;
+    background-color: #56ccf2;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: bold;
+}
+/*------------------------------footer section-------------------------------------*/
+#footer{
+   
+    margin-top: 40px;
+    background-color: rgba(218,216,216);
+    margin: 0px 160px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+}
+.social{
+    padding-top: 20px;
+}
+
+.social a{
+    font-size: 15px;
+    font-family: 'rubik';
+    cursor: not-allowed;
+    color: black;
+}
+.social-media-items{
+    color: green;
+    font-family: 'josefin sans';
+    border-left:1px solid ;
+    border-right:1px solid;
+    text-align: center;
+    padding: 5px 20px;
+
+}
+.select:hover{
+    border-bottom: 2px solid red;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*---------------------------------------Media query---------------------------------------------*/
+@media only screen and (max-width:820px){
+    /*---------nav bar responsive---------*/
+    .menu{
+        width: 50%;
+        font-size: 15px;
+    }
+    .shop{
+        font-size: 15px;
+    }
+    /*-----------------nav baar responsive close-----------------*/
+/*----------------------------home responsive-----------------------------------*/
+.home-container{
+    flex-direction: column-reverse;
+}
+.post-wrapper .post .slider-image{
+    width: 80%;
+    height: 100%;
+}
+.post-wrapper{
+    width: 100%;
+    height: 750px;
+}
+.home-text h3{
+    padding-top: 80px;
+}
+.foodtitle{
+    font-size: 15px;
+
+}
+.home-text{
+    margin-bottom: 100px;
+}
+#todaybtn,
+#todaybtn2{
+    width: 100px;
+}
+.displayupdate{
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+}
+/*-------------Menu list-------------------*/
+.display-menu{
+    height: 50vh;
+    margin: 10px 0px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding-top: 10px;
+
+    
+}
+#menutitle:hover{
+    font-size: 13.4px;
+}
+.rice-menu .rice-title{
+    font-size: 13px;
+}
+#rice-menu{
+    padding: 1px;
+    font-size: 10px;
+}
+/* --------------------------order section----------------------------------*/
+#order{
+    margin: 40px 0px;
+}
+
+.order-place{
+    height: 100vh;
+    margin: 10px 0px;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    padding: 10px;
+}
+/*---------------------------------footer section--------------------------------------*/
+
+#footer{
+    font-size: 15px;
+    margin: 0px;
+}
+.social-media-items{
+    font-size: 15px;
+}
+.social a{
+    font-size: 10px;
+}
+
+
+
+
+
+}
+@media only screen and (min-width:450px){
+  /*--------------Menu List--------------------*/  
+  .display-menu{
+    height: 100vh;
+    
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding-top: 10px;
+  }
+  /*----------------------------order section--------------------------------*/
+  .order-place{
+    height: 50vh;
+    margin: 10px 0px;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    padding: 10px;
+}
+}
+
+@media only screen and (max-width:450px){
+    .cart-item-image{
+        width: 40px;
+    }
+
+    .cart-item-title{
+        font-size: 11px;
+    }
+
+    .cart-quantity-input{
+        font-size: 13px;
+        width: 20px;
+    }
+    .btn-danger{
+        font-size: 10px;
+    }
+}
